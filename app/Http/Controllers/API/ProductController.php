@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Database\Query\Builder;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -27,6 +28,7 @@ class ProductController extends Controller
                 $direction = $sortParams[1] ?? 'asc';
                 return $query->orderBy($sortColumn, $direction);
             });
+
 
         return $query->paginate(5);
     }
