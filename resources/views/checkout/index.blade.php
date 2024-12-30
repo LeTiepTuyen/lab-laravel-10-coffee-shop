@@ -16,7 +16,7 @@
                 <div class="col-span-3 grid grid-cols-1 gap-4">
                     {{-- shippting information form --}}
                     <x-panel icon="identification" header="{{ __('Shipping address') }}">
-                        <div class="grid grid-cols-1 gap-6">
+                        <div class="grid grid-cols-1 gap-4">
                             <div class="grid grid-cols-2 gap-4">
                                 <x-text-input label="{{ __('Your name') }}" name="full_name"
                                               value="{{ old('full_name') }}"
@@ -112,6 +112,3 @@
     {{-- add more space for avoid cart bar override content --}}
     <div class="w-full min-h-[50px]"></div>
 </x-user-layout>
-
-
-
