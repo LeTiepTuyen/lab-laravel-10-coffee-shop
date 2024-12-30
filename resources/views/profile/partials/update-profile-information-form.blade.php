@@ -1,5 +1,5 @@
 <section>
-    <form method="POST" action="{{ route('user-profile-information.update') }}" class="grid grid-cols-1 gap-6">
+    <form method="POST" action="{{ route('user-profile-information.update') }}" class="grid grid-cols-1 gap-4">
         @csrf
         @method('put')
 
@@ -26,4 +26,3 @@
         </div>
     </form>
 </section>
-
